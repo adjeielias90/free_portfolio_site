@@ -1,0 +1,14 @@
+{
+  "name": "portfolio_open",
+  "version": "1.0.0",
+  "description": "Template for dev portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "adjeielias90",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
