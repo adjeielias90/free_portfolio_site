@@ -8,6 +8,8 @@
 //Desktops/ laptops
 @include mediaLg {
 }
+////
+
 //Tablets, small laptops
 @include mediaMd {
   main {
@@ -48,6 +50,17 @@
       background-size: cover;
       border-radius: 50%;
     }
+  }
+
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+
+    grid-template-columns: 1fr;
   }
 }
 
