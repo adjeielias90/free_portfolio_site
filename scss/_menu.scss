@@ -1,3 +1,7 @@
+@mixin transitions {
+  transition: transform 0.3s;
+}
+
 //menu button
 .menu-button {
   position: absolute;
@@ -23,7 +27,7 @@
 
   &.close {
     // transform: rotate3d(0, 1, 0.5, 3.142rad);
-    transition: transform 0.3s;
+    @include transitions();
     transform: rotate(180deg);
 
     .button-line {
@@ -72,7 +76,7 @@
     padding: 0;
     background: rgba(darken($primary-color, 5), 0.7);
     list-style: none;
-    transition: transform 0.3s;
+    @include transitions();
     transform: translate3d(0, -100%, 0);
     @include easeOut;
 
@@ -85,7 +89,7 @@
   //branding side
   &-branding {
     background: rgba($secondary-color, 0.7);
-    transition: transform 0.3s;
+    @include transitions();
     transform: translate3d(0, 100%, 0);
     @include easeOut;
 
@@ -104,5 +108,44 @@
       border-radius: 50%;
       border: solid 3px $primary-color;
     }
+  }
+
+  .nav-item {
+    @include transitions();
+    transform: translate3d(600px, 0, 0);
+    @include easeOut;
+
+    &.show {
+      //slide in from the right
+      transform: translate3d(0, 0, 0);
+    }
+
+    &.current > a {
+      color: $secondary-color;
+    }
+  }
+
+  .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    @include easeOut;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+//delay each nav item slide by 0.1 secs
+
+@for $x from 1 through 4 {
+  .nav-item:nth-child(#{$x}) {
+    // @include transitions();
+    transition-delay: $x * 0.2s;
   }
 }
