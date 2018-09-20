@@ -2,13 +2,16 @@
   "name": "portfolio_open",
   "version": "1.0.0",
   "description": "Template for dev portfolio site",
+  "homepage": "https://adjeielias90.github.io/free_portfolio_site",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "adjeielias90",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^2.0.0",
     "node-sass": "^4.9.3"
   }
 }
