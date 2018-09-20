@@ -219,7 +219,7 @@ main {
     .boxes div:hover {
       transition: all 0.5s;
       transition: all 0.5 ease-out;
-      padding: 0.5rem 1.5rem;
+      padding: 1rem 2rem;
       background: #001f3f;
       color: #fff; }
       .boxes div:hover span {
@@ -244,6 +244,7 @@ main {
 
 #main-footer {
   text-align: center;
+  position: relative;
   padding: 1rem;
   background: #1a4349;
   color: #fff;
