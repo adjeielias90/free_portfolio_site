@@ -258,6 +258,23 @@ main {
   color: #fff;
   height: 60px; }
 
+.standard-btn{
+  margin-bottom: 2rem;
+  padding: 5px;
+  background: #001f3f;
+  color: #fff;
+
+  border-radius: 6px;
+  box-shadow: 6px 2px 81px -19px rgba(23,26,46,1);
+}
+
+.standard-btn:hover{
+  transition: all 0.5s ease-out;
+  background: #fff;
+  color: #001f3f;
+  scale: (1.5);
+}
+
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); }
