@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap");
 .menu-button {
   position: absolute;
   z-index: 3;
@@ -108,7 +109,7 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: 'Lato', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Titillium Web", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/background.jpg);
@@ -171,7 +172,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3" "job4 job5 job6";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -189,6 +190,12 @@ main {
     grid-area: job2; }
   .about-info .job-3 {
     grid-area: job3; }
+  .about-info .job-4 {
+    grid-area: job4; }
+  .about-info .job-5 {
+    grid-area: job5; }
+  .about-info .job-6 {
+    grid-area: job6; }
   .about-info .job {
     background: #2f7781;
     padding: 0.5rem;
@@ -199,8 +206,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.7rem; }
   .projects img {
-    width: 100%;
-    border: 3px #fff solid; }
+    width: 100%; }
     .projects img:hover {
       opacity: 0.4;
       border-color: #001f3f; }
@@ -304,4 +310,6 @@ main {
       margin-top: 1rem;
       font-size: 5rem; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .item {
+    margin-bottom: 35px; } }

@@ -1,6 +1,10 @@
 @import "config";
 @import "menu";
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap');
+
+$titilliumWeb: 'Titillium Web';
+$lato: 'Lato';
 
 @mixin transitions {
   transition: transform 0.5s;
@@ -19,7 +23,7 @@ body {
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: 'Lato', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: $titilliumWeb, Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
 //headings
@@ -85,7 +89,8 @@ main {
   grid-gap: 30px;
   grid-template-areas:
     "bioimage bio bio"
-    "job1 job2 job3";
+    "job1 job2 job3"
+    "job4 job5 job6";
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
@@ -113,6 +118,19 @@ main {
   .job-3 {
     grid-area: job3;
   }
+
+  .job-4 {
+    grid-area: job4;
+  }
+
+  .job-5 {
+    grid-area: job5;
+  }
+
+  .job-6 {
+    grid-area: job6;
+  }
+
   .job {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
@@ -128,13 +146,15 @@ main {
 
   img {
     width: 100%;
-    border: 3px #fff solid;
+    // border: 3px #fff solid;
 
     &:hover {
       opacity: 0.4;
       border-color: $secondary-color;
     }
   }
+
+  // border-bottom: #fff 20px dotted;
 }
 //contact page
 .boxes {
