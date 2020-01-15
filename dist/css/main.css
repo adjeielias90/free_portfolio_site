@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 .menu-button {
   position: absolute;
   z-index: 3;
@@ -107,7 +108,7 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Lato', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/background.jpg);
@@ -250,9 +251,11 @@ main {
   color: #fff;
   height: 60px; }
 
-@media screen and (max-width: 1171px) {
+@media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+  .bio-text {
+    width: 65%; } }
 
 @media screen and (min-wdith: 769px) and (max-width: 1170px) {
   .projects {

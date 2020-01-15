@@ -7,12 +7,22 @@
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  .bio-text {
+    width: 65%;
+  }
+
 }
 //Desktops/ laptops
 @include mediaLg {
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  // .bio-text {
+  //   width: 65%;
+  // }
+
 }
 ////
 
